@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="button_LoadImage">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>320</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>431</width>
+      <height>287</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hasilLabel">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>20</y>
+      <width>431</width>
+      <height>287</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_Grayscale">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>320</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grayscale</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="edgeLabel">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>380</y>
+      <width>431</width>
+      <height>287</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>940</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDFT">
+    <property name="title">
+     <string>DFT</string>
+    </property>
+    <addaction name="actionSmoothing_Image"/>
+    <addaction name="actionEdge_detection"/>
+   </widget>
+   <widget class="QMenu" name="menuDeteksi_Tepi">
+    <property name="title">
+     <string>Deteksi Tepi</string>
+    </property>
+    <addaction name="actionSobel"/>
+    <addaction name="actionPrewitt"/>
+    <addaction name="actionRoberts"/>
+    <addaction name="actionCanny_Edge_Detection"/>
+   </widget>
+   <addaction name="menuDFT"/>
+   <addaction name="menuDeteksi_Tepi"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOperasi_Pencerahan">
+   <property name="text">
+    <string>Operasi Pencerahan</string>
+   </property>
+  </action>
+  <action name="actionSimple_Contrast">
+   <property name="text">
+    <string>Simple Contrast</string>
+   </property>
+  </action>
+  <action name="actionContrast_Stretching">
+   <property name="text">
+    <string>Contrast Stretching</string>
+   </property>
+  </action>
+  <action name="actionNegative_Image">
+   <property name="text">
+    <string>Negative Image</string>
+   </property>
+  </action>
+  <action name="actionBiner_Image">
+   <property name="text">
+    <string>Biner Image</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Grayscale">
+   <property name="text">
+    <string>Histogram Grayscale</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Grayscale_2">
+   <property name="text">
+    <string>Histogram Grayscale</string>
+   </property>
+  </action>
+  <action name="actionHistogram_RGB">
+   <property name="text">
+    <string>Histogram RGB</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Equalization">
+   <property name="text">
+    <string>Histogram Equalization</string>
+   </property>
+  </action>
+  <action name="actionTranslasi_Citra">
+   <property name="text">
+    <string>Translasi Citra</string>
+   </property>
+  </action>
+  <action name="action_45_derajat">
+   <property name="text">
+    <string>-45 derajat</string>
+   </property>
+  </action>
+  <action name="action45_derajat">
+   <property name="text">
+    <string>45 derajat</string>
+   </property>
+  </action>
+  <action name="action_90_derajat">
+   <property name="text">
+    <string>-90 derajat</string>
+   </property>
+  </action>
+  <action name="action90_derajat">
+   <property name="text">
+    <string>90 derajat</string>
+   </property>
+  </action>
+  <action name="action180_derajat">
+   <property name="text">
+    <string>180 derajat</string>
+   </property>
+  </action>
+  <action name="actionFiltering_A">
+   <property name="text">
+    <string>Filtering A</string>
+   </property>
+  </action>
+  <action name="actionFiltering_B">
+   <property name="text">
+    <string>Filtering B</string>
+   </property>
+  </action>
+  <action name="actionMean_Filter_3x3">
+   <property name="text">
+    <string>Mean Filter 3x3</string>
+   </property>
+  </action>
+  <action name="actionMean_Filter_2x2">
+   <property name="text">
+    <string>Mean Filter 2x2</string>
+   </property>
+  </action>
+  <action name="actionGaussian_Filter">
+   <property name="text">
+    <string>Gaussian Filter</string>
+   </property>
+  </action>
+  <action name="actionSharpening">
+   <property name="text">
+    <string>Sharpening</string>
+   </property>
+  </action>
+  <action name="actionMedian_Filter">
+   <property name="text">
+    <string>Median Filter</string>
+   </property>
+  </action>
+  <action name="actionMax_Filtering">
+   <property name="text">
+    <string>Max Filtering</string>
+   </property>
+  </action>
+  <action name="actionMin_Filtering">
+   <property name="text">
+    <string>Min Filtering</string>
+   </property>
+  </action>
+  <action name="actionSmoothing_Image">
+   <property name="text">
+    <string>Smoothing Image</string>
+   </property>
+  </action>
+  <action name="actionEdge_Detection">
+   <property name="text">
+    <string>Edge Detection</string>
+   </property>
+  </action>
+  <action name="actionEdge_detection">
+   <property name="text">
+    <string>Edge Detection</string>
+   </property>
+  </action>
+  <action name="actionSobel">
+   <property name="text">
+    <string>Sobel</string>
+   </property>
+  </action>
+  <action name="actionPrewitt">
+   <property name="text">
+    <string>Prewitt</string>
+   </property>
+  </action>
+  <action name="actionRoberts">
+   <property name="text">
+    <string>Roberts</string>
+   </property>
+  </action>
+  <action name="actionCanny_Edge_Detection">
+   <property name="text">
+    <string>Canny Edge Detection</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
