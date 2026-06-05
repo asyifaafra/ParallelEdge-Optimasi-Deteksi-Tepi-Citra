@@ -2,8 +2,15 @@
 
 Proyek ini merupakan pemenuhan tugas **Evaluasi 3** untuk mata kuliah **IFB 206 Komputasi Paralel**, Program Studi **Informatika**, **Institut Teknologi Nasional (Itenas) Bandung**.
 
-* **Dosen Pengampu:** Dr. sc. Lisa Kristiana, ST., MT.
-* **Kelas:** AA
+* **Dosen Pengampu:** Lisa Kristiana Ph.D
+* **Kelas:** AA / BB / CC *(Pilih kelasmu)*
+
+---
+
+## 👥 Anggota Kelompok
+Proyek ini dikerjakan secara kolaboratif oleh:
+1. Asyifa Afra Sayyida - 152024209
+2. Putri Amelina Rahmawati - 152024188
 
 ---
 
@@ -25,7 +32,7 @@ Dengan metode ini, beban kerja CPU terdistribusi secara merata, sehingga memperc
 
 ---
 
-## 🚀 Fitur Utama aplikasii
+## 🚀 Fitur Utama Aplikasi
 * **Load Image:** Mengimpor citra digital dalam format `.png`, `.jpg`, atau `.jpeg`.
 * **Grayscale Conversion:** Mengubah citra BGR menjadi derajat keabuan (8-bit) sebagai syarat awal pemrosesan tepi.
 * **Multi-Operator Edge Detection:** * **Operator Sobel:** Menggunakan kernel sensitivitas tinggi terhadap efek *noise*.
